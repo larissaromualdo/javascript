@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando...</title>
+    <style>
+        body{
+            background-color: gray;
+            color: rgb(137, 10, 31);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        window.alert('É um prazer ter você aqui, ' + nome + '!')
+        var idade = window.prompt('Qual a sua idade?')
+        window.alert('O site é apropriado para pessoas com ' + idade + ' anos!')
+        var signo = window.prompt('Qual o seu signo?')
+        window.alert('Pessoas de ' + signo + ' são muito legais.')
+
+        var n1 = Number(window.prompt('Digite um número:'))
+        var n2 = Number( window.prompt('Digite outro número:'))
+        var s = n1 + n2
+        window.alert(`A soma entre os valores ${n1} e ${n2} é igual a ${s}.`) //o + tem efeito de concatenação. 
+        // + para adição - para ser adição, precisa ser number de um lado e number do outro, não aceita string para somar.
+        // + para concatenação (string + string)
+        //ps: string = caracteres - number = numeros.
+        // é necessário converter para number: Number(n) ou Number.parseInt(n) para conversao de numeros inteiros ou Number.parseFloat(n) para conversao de numero real - aceita virgula. 
+        document.write(`Seu nome tem ${nome.length} letras. `)
+        document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()}.`)
+        document.write(`Seu nome em letras minúsculas é ${nome.toLowerCase()}`)
+        // precisa colocar os parenteses, mesmo vazio. a variável no caso, é nome - pode trocar. 
+        
+    </script>
+</body>
+</html>
