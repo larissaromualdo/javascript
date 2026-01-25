@@ -6,10 +6,13 @@ function tabuada() {
     window.alert('Por favor, digite um número')
     } else { 
     var n = Number(number.value)
-    var c = 1
+    gerar.innerHTML = ''
     
     for(var c = 1; c <= 10; c++) { 
-        console.log (`${n} x ${c} = ${n*c}`)
+        var item = document.createElement('p')
+        item.textContent = `${n} x ${c} = ${n*c}`
+        gerar.appendChild(item)
     } 
+    
 }
 }
